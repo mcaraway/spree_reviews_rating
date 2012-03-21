@@ -1,4 +1,11 @@
+Deface::Override.new(:virtual_path => "spree/admin/shared/_configuration_menu",
+                     :name => "add_review_settings_link_configuration_menu",
+                     :insert_bottom => "[data-hook='admin_configurations_sidebar_menu']",
+                     :text => %q{<%= configurations_sidebar_menu_item t(:review_settings), admin_review_settings_path %>},
+                     :disabled => false)
+
 Deface::Override.new(:virtual_path => "spree/admin/configurations/index",
-                     :name => "converted_admin_configurations_menu_286465532",
+                     :name => "add_review_settings_to_configuration_menu",
                      :insert_after => "[data-hook='admin_configurations_menu']",
-                     :text => "<%= configurations_menu_item(t(:review_settings), admin_review_settings_path, t(:manage_review_settings)) %>")
+                     :partial => "spree/admin/shared/reviews_setting_configurations_menu",
+                     :disabled => false)

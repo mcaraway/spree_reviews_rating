@@ -26,9 +26,9 @@
 			<%= txt_stars(review.rating) %>
 		</td>
 		<td>
-			<% if review.product %>
+		<% if review.product %>
 			<%= link_to review.product.name, product_path(review.product) %>
-			<% end %>
+		<% end %>
 		</td>
 		<td width="30%">
 			<%= h review.review %>

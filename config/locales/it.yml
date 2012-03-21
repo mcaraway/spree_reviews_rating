@@ -1,5 +1,49 @@
+---
 it:
   activerecord:
+    errors: &errors
+      format: "%{attribute} %{message}\n"
+      
+      messages: &errors_messages
+        inclusion: "non è incluso nella lista"
+        exclusion: "è riservato"
+        invalid: "non è valido"
+        confirmation: "non coincide con la conferma"
+        record_invalid: "Validazione fallita: %{errors}"
+        taken: è già in uso
+        accepted: "deve essere accettata"
+        empty: "non può essere vuoto"
+        blank: "non può essere lasciato in bianco"
+        too_long:
+          one: "è troppo lungo (il massimo è 1 carattere)"
+          other: "è troppo lungo (il massimo è %{count} caratteri)"
+        too_short:
+          one:  "è troppo corto (il minimo è 1 carattere)"
+          other:  "è troppo corto (il minimo è %{count} caratteri)"
+        wrong_length:
+          one: "è della lunghezza sbagliata (deve essere di 1 carattere)"
+          other: "è della lunghezza sbagliata (deve essere di %{count} caratteri)"
+        not_a_number: "non è un numero"
+        not_an_integer: "non è un intero"
+        greater_than: "deve essere superiore a %{count}"
+        greater_than_or_equal_to: "deve essere superiore o uguale a %{count}"
+        equal_to: "deve essere uguale a %{count}"
+        less_than: "deve essere meno di %{count}"
+        less_than_or_equal_to: "deve essere meno o uguale a %{count}"
+        odd: "deve essere dispari"
+        even: "deve essere pari" 
+      
+      models:
+        review:
+          attributes:
+            review:
+              name: Nome
+              title: Titolo
+              review: Contenuto
+              rating: Voto
+              created_at: Data
+              ip_address: IP
+              user: Utente
     attributes:
       review:
         name: Nome
@@ -12,7 +56,7 @@ it:
     models:
       review:
         one: Recensione
-        other: "%{count} recensioni"
+        many: "%{count} recensioni"
   time:
     formats:
        default: "%a %d %b %Y, %H:%M:%S %z"
