@@ -1,34 +1,34 @@
 <%= render :partial => 'spree/admin/shared/configuration_menu' %>
 
-<h1><%= t("spree_reviews.review_settings") %></h1>
+<h1><%= t("reviews_rating.review_settings") %></h1>
 
 <table data-hook="preferences">
 	<% @preferences.each do |key| %>
 	<tr>
-		<th scope="row"><%= t("spree_reviews.#{key}") %>:</th>
+		<th scope="row"><%= t("reviews_rating.#{key}") %>:</th>
 		<td><%= Spree::Config[key] %></td>
 	</tr>
 	<% end %>
 	<tr>
-		<th scope="row"><%= t("spree_reviews.include_unapproved_reviews") %>:</th>
+		<th scope="row"><%= t("reviews_rating.include_unapproved_reviews") %>:</th>
 		<td>
 			<%= (Spree::Config[:include_unapproved_reviews].blank?) ? t(:no) : t(:yes) %>
 		</td>
 	</tr>
 	<tr>
-		<th scope="row"><%= t("spree_reviews.show_email") %>:</th>
+		<th scope="row"><%= t("reviews_rating.show_email") %>:</th>
 		<td>
 			<%= (Spree::Config[:show_email].blank?) ? t(:no) : t(:yes) %>
 		</td>
 	</tr>
 	<tr>
-		<th scope="row"><%= t("spree_reviews.require_login") %>:</th>
+		<th scope="row"><%= t("reviews_rating.require_login") %>:</th>
 		<td>
 			<%= (Spree::Config[:require_login].blank?) ? t(:no) : t(:yes) %>
 		</td>
 	</tr>
 	<tr>
-		<th scope="row"><%= t("spree_reviews.form_show") %>:</th>
+		<th scope="row"><%= t("reviews_rating.form_show") %>:</th>
 		<td>
 			<%= (Spree::Config[:form_show].blank?) ? t(:no) : t(:yes) %>
 		</td>

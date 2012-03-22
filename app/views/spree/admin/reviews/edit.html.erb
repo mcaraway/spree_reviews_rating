@@ -1,7 +1,7 @@
 <h1><%= t("reviews_rating.editing_review_for") %> <%= @review.product.name %></h1>
 <%= link_to t('back_reviews'), admin_reviews_path %><br />
 
-<h2><%= t(:original_version) %></h2>
+<h2><%= t("reviews_rating.original_verision") %></h2>
 <div style="padding: 15px 5px;">
 	<%= @review.user_id ? link_to(@review.user.try(:email), [:admin, @review.user]) : @review.name %><br />
 	<% if @review.product %>
@@ -11,7 +11,7 @@
 </div>
 
 <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @review } %>
-<h2><%= t(:edited_version) %></h2>
+<h2><%= t("reviews_rating.edited_version") %></h2>
 
 <%= semantic_form_for([:admin, @review]) do |f| %>
 <%= render :partial => "form", :locals => { :f => f } %>

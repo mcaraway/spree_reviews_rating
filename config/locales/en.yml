@@ -102,7 +102,7 @@ en:
   review_successfully_submitted: Review was successfully submitted
   review_not_submitted: Review was not submitted
   review_title: Title
-  spree_reviews:
+  reviews_rating:
     preview_size: Size of the review snippets
     include_unapproved_reviews: Include unapproved reviews in listings
     show_email: Show user email
@@ -115,6 +115,11 @@ en:
     review: Review
     note_reviews: Note
     continue: Send
+    no_reviews_found: No review yet included
+    edited_version: Edited Version
+    original_version: Original Version
+    review_settings: Reviews Setting
+    manage_review_settings: Manage Reviews Setting
     rating: Rate
     note_review_description: Do not insert HTML code!
     review_settings: Review Settings

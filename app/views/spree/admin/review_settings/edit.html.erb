@@ -1,14 +1,14 @@
 <%= render :partial => 'spree/admin/shared/configuration_menu' %>
 
-<h1><%= t("spree_reviews.review_settings") %></h1>
+<h1><%= t("reviews_rating.review_settings") %></h1>
 
 <%= form_tag admin_review_settings_path, :method => :put do %>
   <fieldset id="preferences" data-hook>
   <% @preferences.each do |key| 
       type = Spree::Config.preference_type(key) %>
-      <%= label_tag(key, t("spree_reviews.#{key}") + ': ') + tag(:br) if type != :boolean %>
+      <%= label_tag(key, t("reviews_rating.#{key}") + ': ') + tag(:br) if type != :boolean %>
       <%= preference_field_tag(key, Spree::Config[key], :type => type) %>
-      <%= label_tag(key, t("spree_reviews.#{key}")) + tag(:br) if type == :boolean %>
+      <%= label_tag(key, t("reviews_rating.#{key}")) + tag(:br) if type == :boolean %>
   <% end %>
   </fieldset>
   <p class="form-buttons" data-hook="buttons">

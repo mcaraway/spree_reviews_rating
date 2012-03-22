@@ -103,7 +103,7 @@ it:
   review_successfully_submitted: La recensione è stata inviata correttamente
   review_not_submitted: Non è stato possibile salvare la recensione.
   review_title: Title
-  spree_reviews:
+  reviews_rating:
     preview_size: Anteprima recensioni visualizzabili in pagina prodotto
     include_unapproved_reviews: Includere le recensioni non approvate
     show_email: Visualizza la mail dell'utente
@@ -116,6 +116,11 @@ it:
     review: Recensione
     note_reviews: Note
     continue: Invia
+    no_reviews_found: Nessuna Recensione ancora inserita
+    edited_version: Versione Modificata
+    original_version: Versione Originale
+    review_settings: Impostazioni Recensioni
+    manage_review_settings: Gestione Impostazioni Recensioni
     rating: Vota
     note_review_description: Non inserire codice HTML!
     review_settings: Configurazioni Recensioni
