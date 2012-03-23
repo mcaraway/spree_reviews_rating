@@ -1,3 +1,4 @@
+# encoding: UTF-8
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_reviews_rating'
@@ -8,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.author            = 'Damiano Giacomello'
   s.email             = 'damiano.giacomello@diginess.it'
-  s.homepage          = 'https://github.com/romul/spree-reviews/'
+  # s.homepage          = 'http://www.rubyonrails.org'
   # s.rubyforge_project = 'actionmailer'
 
   #s.files         = `git ls-files`.split("\n")

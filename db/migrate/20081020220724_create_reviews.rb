@@ -1,5 +1,5 @@
 class CreateReviews < ActiveRecord::Migration
-  def self.up
+  def change
     create_table :spree_reviews do |t|
       t.string  :name, :location
       t.integer :rating
@@ -10,9 +10,5 @@ class CreateReviews < ActiveRecord::Migration
       
       t.timestamps
     end
-  end
-
-  def self.down
-    drop_table :spree_reviews
   end
 end
