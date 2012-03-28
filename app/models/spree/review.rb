@@ -4,7 +4,7 @@ module Spree
     belongs_to :user
 
     validates_presence_of :name, :review
-    validates_numericality_of :rating, :only_integer => true
+    validates_numericality_of :rating, :if => Proc.new {|r| !r.rating.blank?}
     default_scope order("created_at DESC")
     scope :not_approved, where("approved = ?", false)
 

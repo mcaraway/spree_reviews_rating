@@ -108,3 +108,10 @@
 	width: 320px;
 	padding: 5px;
 }
+
+.s_bgmsg_green {
+	color: #468847;
+	background-color: #D6E9C6 !important;
+	width: 320px;
+	padding: 5px;
+}
