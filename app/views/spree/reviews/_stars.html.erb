@@ -6,9 +6,9 @@ jQuery(document).ready(function() {
 		cancel: true,
 		half:  true,
 		width: 180,
-		starHalf: 'star-half.png',
-		starOff: 'star-off.png',
-		starOn:	'star-on.png',
+		starHalf: 'star-half<%= "-big" if (Spree::Config[:star_big] == true) %>.png',
+		starOff: 'star-off<%= "-big" if (Spree::Config[:star_big] == true) %>.png',
+		starOn:	'star-on<%= "-big" if (Spree::Config[:star_big] == true) %>.png',
 		path: '/assets/',
 		click: function(score, evt) {
 			$("#review_rating").val(score);

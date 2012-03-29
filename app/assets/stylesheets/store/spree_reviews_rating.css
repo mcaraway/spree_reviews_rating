@@ -76,6 +76,27 @@
 	padding: 1px;
 }
 
+.review .author {
+	float: left;
+}
+
+.right {
+	float: right !important;
+}
+
+.single_rating {
+	margin-right: 3px;
+}
+
+.single_rating.rate {
+	width: 180px;
+}
+
+.review .single_rating, .review .average {
+	float: left;
+	margin-left: 5px;
+}
+
 .lit {
   background-color: #aaaaaa;
   color: #0000bb;

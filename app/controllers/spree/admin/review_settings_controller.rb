@@ -8,7 +8,7 @@ module Spree
 
       def edit
         @preferences = [:include_unapproved_reviews, :show_email,
-                        :require_login, :form_show, :preview_size]
+                        :require_login, :form_show, :preview_size, :star_big]
       end
       
       def update

@@ -33,6 +33,12 @@
 			<%= (Spree::Config[:form_show].blank?) ? t(:no) : t(:yes) %>
 		</td>
 	</tr>
+	<tr>
+		<th scope="row"><%= t("reviews_rating.star_big") %>:</th>
+		<td>
+			<%= (Spree::Config[:star_big].blank?) ? t(:no) : t(:yes) %>
+		</td>
+	</tr>
 </table>
 
 <p><%= link_to_with_icon 'edit', t(:edit), edit_admin_review_settings_path, :id => 'admin_store_settings_link' %></p>

@@ -4,7 +4,7 @@
 		<%= render :partial => 'spree/shared/review', :locals => {:review => review} %>
 	<% end %>
 <% else %>
-	<div class="s_review" itemprop="reviews" itemscope itemtype="http://schema.org/Review"><%= t("reviews_rating.no_reviews_found") %></div>
+	<div class="review" itemprop="reviews" itemscope itemtype="http://schema.org/Review"><%= t("reviews_rating.no_reviews_found") %></div>
 <% end %>
 	<div class="pagination">
 		<div class="results"><%= paginate @product.reviews.approved.page(params[:page]).per(Spree::Config[:preview_size]) %></div>

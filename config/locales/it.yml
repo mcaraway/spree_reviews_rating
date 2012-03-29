@@ -126,6 +126,7 @@ it:
     review_settings: Configurazioni Recensioni
     manage_review_settings: Control the display of reviews
     feedback_rating: Rate feedback
+    star_big: Stelle Grandi
     require_login: Devi essere loggato per procedere
     your_name: Il tuo nome
     your_location: La tua posizione

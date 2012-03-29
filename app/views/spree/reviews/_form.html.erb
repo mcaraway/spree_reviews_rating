@@ -1,19 +1,19 @@
 <%= form_for review, :url => product_reviews_path(product), :html => {:id => "reviews_form"}, :remote => true do |f| %>
 	<%= render :partial => "spree/shared/error_messages", :locals => {:target => review} %>
 
-	<div class="s_row_3 clearfix">
-		<%= content_tag(:label, t("reviews_rating.name")) %>
+	<div class="review_name_field">
+		<%= f.label :name, t("reviews_rating.name") %> <span class="required">*</span><br />
 		<%= f.text_field :name %>
 	</div>
-	<div class="s_row_3 clearfix">
-		<%= content_tag(:label, t("reviews_rating.review")) %>
+	<div class="review_review_field">
+		<%= f.label :review, t("reviews_rating.review") %> <span class="required">*</span><br />
 		<%= f.text_area :review, :wrap => "virtual", :rows => "8", :cols => "50" %>
 		<p class="s_legend">
 			<span style="color: #FF0000;"><%= t("reviews_rating.note_reviews") %></span> <%= t("reviews_rating.note_review_description") %></p>
 	</div>
 	
-	<div class="s_row_3 clearfix">
-		<%= content_tag(:label, t("reviews_rating.rating")) %>
+	<div class="review_rating_field">
+	    <%= f.label :rating, t("reviews_rating.rating") %> <span class="required">*</span><br />
 		<%= render :partial => "spree/reviews/stars" %>
 		<%= f.hidden_field :rating %>
 	</div>

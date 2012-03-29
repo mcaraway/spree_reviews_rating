@@ -1,19 +1,19 @@
-<div class="s_review" itemprop="reviews" itemscope itemtype="http://schema.org/Review">
+<div class="review" itemprop="reviews" itemscope itemtype="http://schema.org/Review">
 	<% if Spree::Config[:show_email] && review.user %>
-	<p class="s_author" itemprop="author"><strong><%= review.user.email %></strong>
+	<p class="author" itemprop="author"><strong><%= review.user.email %></strong>
 	<% else %>
-	<p class="s_author" itemprop="author"><strong><%= raw review.name %></strong>
+	<p class="author" itemprop="author"><strong><%= raw review.name %></strong>
 	<% end %>
-		<small itemprop="datePublished">(<%= l review.created_at.to_date %>)</small>
+		<small itemprop="datePublished"><%= t('submitted_on') %> (<%= l review.created_at.to_date %>)</small>
 	</p>
 	<div class="right">
-      <div class="s_rating_holder">
+      <div class="single_rating_holder">
 		<meta itemprop="reviewRating" content="<%= review.rating %>" />
         <%= render :partial => "spree/shared/single_rating", :locals => {:review => review} %>
       </div>
     </div>
 	<div class="clear"></div>
-	<p itemprop="reviewBody">
+	<div itemprop="reviewBody">
 		<%= raw simple_format(review.review) %>
-	</p>
+	</div>
 </div>

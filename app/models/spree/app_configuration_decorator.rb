@@ -10,5 +10,7 @@ Spree::AppConfiguration.class_eval do
   preference :require_login, :boolean, :default => true
   # not view form immediatly
   preference :form_show, :boolean, :default => true
+  # user star big or normal
+  preference :star_big, :boolean, :default => false
   
 end
