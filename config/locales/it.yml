@@ -67,7 +67,7 @@ it:
        dow: "%A"
 
   approve: Approvare
-  on_stars: su
+  on_stars: "su"
   stars: stelle!
   Approved_reviews: Approvate
   approved_text: Unlocked comments will be published within 1-2 business days.
@@ -90,6 +90,7 @@ it:
   leave_us_a_review: Lasciaci un commento e un voto
   original_version: 'Original version'
   out_of_5: "su 5"
+  no_rated: Nessun voto
   created_at: Creata il
   rating: Voto
   review: Recensione
