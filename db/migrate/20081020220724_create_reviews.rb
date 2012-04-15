@@ -1,6 +1,6 @@
 class CreateReviews < ActiveRecord::Migration
   def change
-    create_table :spree_reviews do |t|
+    create_table :reviews do |t|
       t.string  :name, :location
       t.decimal :rating
       t.text :review
