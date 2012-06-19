@@ -2,7 +2,7 @@ class CreateReviews < ActiveRecord::Migration
   def self.up
     create_table :reviews do |t|
       t.string  :name, :location
-      t.integer :rating
+      t.decimal :rating
       t.text :review
       t.boolean :approved, :default => false
       
