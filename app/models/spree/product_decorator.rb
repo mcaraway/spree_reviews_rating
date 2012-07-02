@@ -11,4 +11,6 @@ Spree::Product.class_eval do
     self.update_attributes(:avg_rating => avg_rating, :reviews_count => reviews_count)
   end
   
+  attr_accessible :avg_rating, :reviews_count
+  
 end
