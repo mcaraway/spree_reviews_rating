@@ -15,10 +15,8 @@ module Spree
     end
 
     private
-
     def expire_cache_for(review)
       review.product.recalculate_rating
     end
-    
   end
 end
