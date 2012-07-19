@@ -8,7 +8,7 @@ Installation
 ------------
 1. Add the following to your Gemfile
 <pre>
-  gem 'spree_reviews_rating', '~> 0.70.3'
+  gem 'spree_reviews_rating', '~> 0.70.7'
 </pre>
 2. Run `bundle install`
 3. To copy and apply migrations run:
