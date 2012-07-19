@@ -1,7 +1,16 @@
 module SpreeReviewsRating
   module Generators
     class InstallGenerator < Rails::Generators::Base
-
+      
+      def add_formtastic
+        res = ask "Would you like to run the formtastic install now? [Y/n]"
+        if res == "" || res.downcase == "y"
+          run 'rails generate formtastic:install'
+        else
+          puts "Skiping rails generate formtastic:install, don't forget to run it!"
+        end
+      end
+      
       def add_javascripts
         append_file "app/assets/javascripts/store/all.js", "//= require store/spree_reviews_rating\n"
       end
