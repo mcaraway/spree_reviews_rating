@@ -1,4 +1,4 @@
-Spree::User.class_eval do
+Spree.user_class.class_eval do
   before_create :set_role
   
   def set_role
