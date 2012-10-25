@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_reviews_rating'
-  s.version     = '1.1.1'
+  s.version     = '1.2.0'
   s.summary     = 'Basic review and ratings facility for Spree'
   s.required_ruby_version = '>= 1.8.7'
 
