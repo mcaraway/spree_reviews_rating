@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core'
+  s.add_dependency 'spree'
   
   s.add_dependency 'formtastic'
   s.add_dependency 'paperclip'
